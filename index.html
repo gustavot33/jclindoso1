@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jc lindao</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c; /* Fundo escuro para um estilo futurista */
+            margin: 0;
+            padding: 0;
+            color: #e0e0e0; /* Cor do texto clara */
+            text-transform: lowercase; /* Transforma todo o texto em minúsculas */
+        }
+
+        header {
+            background-color: #000000; /* Cor do cabeçalho */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid #333; /* Borda inferior */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Altura do main */
+            padding: 20px;
+        }
+
+        .button-container {
+            background: #2a2a2a; /* Fundo da caixa de botões */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff0000; /* Cor do botão */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+            font-size: 1em;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #910000; /* Cor do botão ao passar o mouse */
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        .content {
+            display: none; /* Oculta o conteúdo por padrão */
+            margin-top: 20px;
+            background: #333; /* Fundo do conteúdo */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Estilo das imagens */
+        .content img {
+            width: 150px; /* Largura fixa das imagens */
+            height: 150px; /* Altura fixa para esticar a imagem */
+            object-fit: cover; /* Cobre o espaço sem distorcer */
+            border-radius: 10px; /* Bordas arredondadas */
+            margin: 5px; /* Espaçamento entre as imagens */
+            transition: transform 0.3s; /* Efeito de transição para hover */
+        }
+
+        .content img:hover {
+            transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+        }
+
+        /* Estilo da imagem da seção de habilidades */
+        #content1 img {
+            width: 100%; /* Largura máxima da imagem */
+            height: 150px; /* Altura fixa para esticar a imagem */
+            object-fit: cover; /* Cobre o espaço sem distorcer */
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+            padding: 10px;
+            background-color: #000000; /* Cor do rodapé */
+            color: white;
+        }
+
+        /* Estilo para o container das imagens */
+        .image-container {
+            display: flex; /* Exibe imagens lado a lado */
+            justify-content: center; /* Centraliza as imagens */
+            flex-wrap: wrap; /* Permite que as imagens quebrem a linha se necessário */
+        }
+
+        /* Estilo para a seção "Descubra rs" */
+        .discover-container {
+            display: flex; /* Usar flexbox para colunas */
+            justify-content: space-around; /* Espaçamento uniforme */
+            flex-wrap: wrap; /* Permite que as colunas quebrem a linha se necessário */
+            margin-top: 20px; /* Espaçamento superior */
+        }
+
+        .discover-item {
+            text-align: center; /* Centraliza o texto */
+            margin: 10px; /* Margem entre os itens */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>6 cm e meu saco nem aparece</h1>
+    <p></p>
+</header>
+
+<main>
+    <div class="button-container">
+        <h2>escolha uma opção:</h2>
+        <button onclick="showContent('content1')">habilidade do pai dos seus filhos</button>
+        <button onclick="showContent('content2')">descubra rs</button>
+        
+        <button onclick="showContent('content4')">trampo sério</button> <!-- Novo botão adicionado -->
+        
+        <div id="content1" class="content">
+            <h3>habilidades:</h3>
+            <p>xingando sulistas em jogos online</p>
+            <p>ser web machista</p>
+            <p>siriricar com 3 dedos</p>
+            <p>comer pé de galinha</p>
+            <img src="ronaldoalgumacoisa.png" alt="Imagem de Ronaldo">
+            <button onclick="hideContent('content1')">fechar</button>
+        </div>
+        
+        <div id="content2" class="content">
+            <h1>as melhores mulheres do mundo</h1>
+            <div class="discover-container"> <!-- Container para as descrições -->
+                <div class="discover-item">
+                    <h3>sweetie fox:</h3>
+                    <img src="switefox.png" alt="Imagem de Sweetie Fox">
+                    <p>faz minha pecinha endurecer</p>
+                </div>
+                <div class="discover-item">
+                    <h3>elisa sanches:</h3> 
+                    <img src="elisa.png" alt="Imagem de Elisa Sanches">
+                    <p>o vídeo dela comendo bosta é muito bom</p>
+                </div>
+                <div class="discover-item">
+                    <h3>sally:</h3>
+                    <img src="carra.png" alt="Imagem do carro de Sally">
+                    <p>acabava com o escapamento dela</p>
+                </div>
+                <div class="discover-item">
+                    <h3>velma:</h3>
+                    <img src="velma.png" alt="Imagem de Velma">
+                    <p>botava até no umbigo</p>
+                </div>
+                <div class="discover-item">
+                    <h3>sla o nome da cadela:</h3>
+                    <img src="loli.png" alt="Imagem da cadela">
+                    <p>seloco vida</p>
+                </div>
+            </div>
+            <button onclick="hideContent('content2')">fechar</button>
+        </div>
+
+        <div id="content3" class="content">
+            
+        </div>
+
+        <div id="content4" class="content"> <!-- Novo conteúdo para "Trampo Sério" -->
+            <h3>rs</h3>
+            <h3><a href="https://onlyfans.com/jcfofo" target="_blank" style="color: #ff0000;">https://onlyfans.com/jcfofo</a></h3>
+            <button onclick="hideContent('content4')">fechar</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; jc come bosta.</p>
+</footer>
+
+<script>
+    function showContent(contentId) {
+        // Oculta todos os conteúdos
+        document.querySelectorAll('.content').forEach(content => {
+            content.style.display = 'none';
+        });
+        // Mostra o conteúdo selecionado
+        document.getElementById(contentId).style.display = 'block';
+    }
+
+    function hideContent(contentId) {
+        document.getElementById(contentId).style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
